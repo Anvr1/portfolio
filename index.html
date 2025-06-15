@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajesh Addepalli - Personal Portfolio</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/customStyles.css">
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- IonIcons for icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</head>
+
+<body>
+  <main class="flex flex-col md:flex-row min-h-screen">
+
+    <aside class="sidebar w-full md:w-72 bg-zinc-800 p-4" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/profile-pic.jpg" alt="Rajesh Addepalli" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Rajesh Addepalli">Rajesh Addepalli</h1>
+          <p class="title">Robotics and Autonomy Engineer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:rajeshaddepalli435@gmail.com" class="contact-link">rajeshaddepalli435@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+1 (445) 260 - 9131" class="contact-link">+1 (445) 260 - 9131</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="January 20 2001">January 20, 2001</time>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Philadelphia, PA, USA</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rajesh-addepalli/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    
+    <div class="main-content flex-1 bg-zinc-900">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>Portfolio</button>
+          </li>
+        </ul>
+      </nav>
+      <article class="portfolio active bg-zinc-900 shadow-2xl rounded-lg overflow-hidden" data-page="portfolio">
+        <header class="p-6 sm:p-8 border-b border-zinc-700">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white">Portfolio</h2>
+        </header>
+        <section class="content-area p-6 sm:p-8">
+            <nav class="mb-8">
+                <ul class="flex flex-wrap gap-2 sm:gap-4 border-b border-zinc-700 pb-4">
+                    <li>
+                        <button class="tab-button active" data-tab-target="#about-me">
+                            <ion-icon name="person-outline" class="mr-2 align-middle"></ion-icon>About Me
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tab-button" data-tab-target="#experience">
+                             <ion-icon name="trending-up-outline" class="mr-2 align-middle"></ion-icon>Experience
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tab-button" data-tab-target="#skills">
+                            <ion-icon name="build-outline" class="mr-2 align-middle"></ion-icon>Skills
+                        </button>
+                    </li>
+                    <li>
+                      <button class="tab-button" data-tab-target="#projects">
+                          <ion-icon name="file-tray-stacked-outline" class="mr-2 align-middle"></ion-icon>Projects
+                      </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="content-container" class="mt-6">
+                <div id="about-me" class="tab-content active">
+                  <h3 class="text-2xl font-semibold mb-4 text-amber-400">About Me</h3>
+                  <div class="space-y-4 text-zinc-300">
+                      <p>As a Robotics & Autonomy Engineer, I specialize in the practical application of industrial automation. My hands-on experience operating FANUC robots for welding applications, including inspection and troubleshooting, drives my passion for creating robust and efficient manufacturing solutions.</p>
+                      <p>My unique value lies in bridging advanced robotic theory with real-world industrial challenges. I am currently deepening my expertise in next-generation autonomous systems through my Master's studies at Drexel University, aiming to contribute to the future of smart manufacturing.</p>
+                      <p>Known for being a quick learner with strong adaptability, I thrive in dynamic environments where continuous learning on the floor and rapid problem-solving are key to success.</p>
+                      <p>My passion for robotics and automation began in 6th grade when I saw a senior student present a robot project. That moment inspired me to pursue robotics ever since.</p>
+                  </div>
+                  <hr class="my-8 border-zinc-700">
+                  <h3 class="text-2xl font-semibold mb-4 text-amber-400">Education</h3>
+                  <div class="space-y-4 text-zinc-300">
+                      <div>
+                          <h4 class="text-lg font-medium text-amber-300">Master of Science in Robotics and Autonomy</h4>
+                          <p class="text-zinc-400">Drexel University, Philadelphia, PA, USA</p>
+                          <p class="text-sm text-zinc-500">September 2023 – December 2025</p>
+                      </div>
+                      <div>
+                          <h4 class="text-lg font-medium text-amber-300">Bachelor of Technology in Robotics and Automation</h4>
+                          <p class="text-zinc-400">SRM University, Sonipat, Haryana, India</p>
+                          <p class="text-sm text-zinc-500">August 2018 – June 2022</p>
+                      </div>
+                  </div>
+                  <hr class="my-8 border-zinc-700">
+                  <h3 class="text-2xl font-semibold mb-4 text-amber-400">Achievements</h3>
+                  <div class="space-y-2 text-zinc-300">
+                      <ul class="list-disc list-inside space-y-1">
+                          <li>Seaman Endowed Award</li>
+                          <li>Nihat Bilgutay ECE Fellowship</li>
+                          <li>Dean's Fellowship Award</li>
+                          <li>Best Intern Award</li>
+                          <li>Gold Medal for Undergrad</li>
+                      </ul>
+                  </div>
+                </div>
+
+                <div id="experience" class="tab-content">
+                  <h3 class="text-2xl font-semibold mb-6 text-amber-400">Experience</h3>
+                  <div class="space-y-8 text-zinc-300">
+                      <div>
+                          <h4 class="text-2xl font-semibold mb-4 text-amber-400">Robot Welder Intern / Technician - Gridbots Technologies</h4>
+                          <p class="text-sm text-zinc-500">Aug 2022 - Dec 2022</p>
+                          <ul class="list-disc list-inside mt-3 space-y-2 text-zinc-400">
+                              <li>Programmed FANUC robots using teach pendant based on project requirements to perform precise automated welding tasks.</li>
+                              <li>Set and optimized welding parameters (MIG, TIG, spot welding) to ensure consistent high-quality welds and reduce defects.</li>
+                              <li>Conducted routine maintenance and troubleshooting of robotic welding equipment, minimizing downtime and improving production efficiency.</li>
+                              <li>Performed minor electrical troubleshooting on robot systems to quickly resolve issues and maintain smooth operations.</li>
+                              <li>Applied lubricants regularly to robotic joints and moving parts to ensure smooth movement and prevent wear.</li>
+                              <li>Collaborated with engineers to refine welding paths and robot movements, resulting in faster cycle times and increased throughput.</li>
+
+                              <li>Followed daily safety procedures and conducted pre-shift equipment checks to ensure a safe working environment.</li>
+                                
+                              <li>Inspected weld quality using visual checks and measurement tools to ensure compliance with safety and quality standards.</li>
+                                
+                              <li>Documented welding procedures and maintenance logs to support continuous improvement and adherence to best practices.</li>
+
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Fanuc Robot Programming</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Teach Pendant Operation</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">MIG&TIG Welding</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Welding Parameter Optimization</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Robot System Troubleshooting</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Weld Quality Section</span>
+                          </ul>
+                      </div>
+                      <hr class="border-zinc-700">
+                      <div>
+                          <h4 class="text-xl font-medium text-white">Report Analyst - DCS</h4>
+                          <p class="text-sm text-zinc-500">June 2020 - August 2020</p>
+                          <ul class="list-disc list-inside mt-3 space-y-2 text-zinc-400">
+                              <li>Collected and consolidated daily progress information from team members working on the knuckle joint design project.</li>
+                              <li>Used Excel to organize and manage the data efficiently for easy tracking and analysis.</li>
+                              <li>Prepared and submitted regular progress reports to the professor to keep project oversight updated.</li>
+                              <li>Ensured accurate documentation of tasks and milestones to support timely project completion.</li>
+                              <li>Completed assigned data management tasks, contributing to the smooth running of the project workflow.</li>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Data Collection & Consolidation</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Project progress Reporting</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Data Managment (Exce;)</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Task & Milestone Documentation </span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Workflow Support</span>
+
+                              
+                          </ul>
+                      </div>
+                  </div>
+                </div>
+
+              <div id="skills" class="tab-content">
+                  <h3 class="text-2xl font-semibold mb-6 text-amber-400">Skills</h3>
+                  <div class="space-y-6">
+              
+                      <div>
+                          <h4 class="text-xl font-semibold text-white mb-3">Engineering Design</h4>
+                          <div class="flex flex-wrap gap-3">
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Electrical Schematics</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Design</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Layouts</span>
+                          </div>
+                      </div>
+              
+                      <div>
+                          <h4 class="text-xl font-semibold text-white mb-3">PLC Languages</h4>
+                          <div class="flex flex-wrap gap-3">
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Ladder Logic</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Function Block Diagram</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">RSLogix 500</span>
+                          </div>
+                      </div>
+              
+                      <div>
+                          <h4 class="text-xl font-semibold text-white mb-3">Data Analysis</h4>
+                          <div class="flex flex-wrap gap-3">
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Microsoft Office</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Report Generation</span>
+                          </div>
+                      </div>
+              
+                      <div>
+                          <h4 class="text-xl font-semibold text-white mb-3">Troubleshooting and Maintenance</h4>
+                          <div class="flex flex-wrap gap-3">
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Equipment Troubleshooting</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Dismantling</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Inspection</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Material Handling</span>
+                          </div>
+                      </div>
+
+                      <div>
+                        <h4 class="text-xl font-semibold text-white mb-4">ROS Frameworks</h4>
+                        <div class="space-y-4">
+                    
+                            <div>
+                                <p class="text-lg font-semibold text-gray-300 mb-2">ROS 2 (Humble Hawksbill)</p>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="bg-zinc-700 text-white text-base font-medium px-4 py-2 rounded-lg shadow">ROS 2 Core Concepts (Nodes, DDS)</span>
+                                    <span class="bg-zinc-700 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Colcon Build System</span>
+                                    <span class="bg-zinc-700 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Python Launch Files</span>
+                                    <span class="bg-zinc-700 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Navigation2 Stack</span>
+                                    <span class="bg-zinc-700 text-white text-base font-medium px-4 py-2 rounded-lg shadow">MoveIt2</span>
+                                </div>
+                            </div>
+                    
+                            <div>
+                                <p class="text-lg font-semibold text-gray-300 mb-2">ROS 1 (Noetic/Melodic)</p>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">ROS 1 Core Concepts</span>
+                                    <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Catkin Build System</span>
+                                    <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">XML Launch Files</span>
+                                    <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">ROS Navigation Stack</span>
+                                    <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">MoveIt!</span>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+              
+                      <div>
+                          <h4 class="text-xl font-semibold text-white mb-3">Soft Skills</h4>
+                          <div class="flex flex-wrap gap-3">
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Leadership</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Team Management</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Dedicated</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Adaptable</span>
+                          </div>
+                      </div>
+              
+                      <div>
+                          <h4 class="text-xl font-semibold text-white mb-3">Welding Techniques</h4>
+                          <div class="flex flex-wrap gap-3">
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">TIG</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">MIG</span>
+                              <span class="bg-zinc-800 text-white text-base font-medium px-4 py-2 rounded-lg shadow">Soldering</span>
+                          </div>
+                      </div>
+              
+                  </div>
+              </div>
+
+              <section id="projects" class="tab-content">
+                <h3 class="text-2xl font-semibold mb-6 text-amber-400">My Projects</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <!-- Project 1 -->
+                  <div class="project-flipper-container">
+                    <div class="flipper w-full aspect-square">
+                      <div class="card-face card-front w-full h-full cursor-pointer">
+                        <img src="assets/images/hydraulic arm.png" class="w-full h-full object-cover rounded-lg">
+                      </div>
+                      <div class="card-face card-back w-full h-full bg-zinc-800 p-6 rounded-lg flex flex-col overflow-y-auto">
+                        <button class="back-button" aria-label="Go back to projects"><ion-icon name="arrow-back-outline"></ion-icon></button>
+                        <h4 class="text-xl font-bold text-amber-300">Hydraulic Robot Arm</h4>
+                        <div class="text-sm text-amber-200 mt-2">
+                          <span><strong>Role:</strong> Assembly & Documentation</span><br>
+                          <span><strong>Duration:</strong> 3 months</span><br>
+                          <span><strong>Team Size:</strong> 2 members</span>
+                        </div>
+                        <p class="text-zinc-400 mt-4">This project involved creating a robot arm powered entirely by hydraulic pressure. Using a system of syringes, tubing, and fluid dynamics, the arm was developed to perform basic articulated movements controlled through pressure-based actuation.</p>
+                        <p class="text-zinc-300 mt-4 font-semibold">My contributions included:</p>
+                        <ul class="list-disc list-inside text-zinc-400 space-y-1 mt-2">
+                          <li>Assembling the hydraulic system by connecting syringes and tubes to ensure smooth fluid transfer.</li>
+                          <li>Supporting alignment and testing of each arm segment to maintain balanced motion.</li>
+                          <li>Creating the project documentation and presentation slides.</li>
+                        </ul>
+                        <div class="mt-auto pt-4 flex flex-wrap gap-2">
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">Mechanical Assembly</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">Fluid Dynamics</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Project 2 -->
+                  <div class="project-flipper-container">
+                    <div class="flipper w-full aspect-square">
+                      <div class="card-face card-front w-full h-full cursor-pointer">
+                        <img src="assets/images/Gesture bot Arm.png" alt="Gesture Bot Arm Project" class="w-full h-full object-cover rounded-lg">
+                      </div>
+                      <div class="card-face card-back w-full h-full bg-zinc-800 p-6 rounded-lg flex flex-col overflow-y-auto">
+                        <button class="back-button" aria-label="Go back to projects"><ion-icon name="arrow-back-outline"></ion-icon></button>
+                        <h4 class="text-xl font-bold text-amber-300">Gesture Bot Arm</h4>
+                        <div class="text-sm text-amber-200 mt-2">
+                          <span><strong>Role:</strong> Hardware Integration & Documentation</span><br>
+                          <span><strong>Duration:</strong> 6 months</span><br>
+                          <span><strong>Team Size:</strong> 4 members</span>
+                        </div>
+                        <p class="text-zinc-400 mt-4">Built a robotic arm on a ground vehicle, controlled using hand gestures for remote pick-and-place operations.</p>
+                        <p class="text-zinc-300 mt-4 font-semibold">Key Implementations:</p>
+                        <ul class="list-disc list-inside text-zinc-400 space-y-1 mt-2">
+                          <li>Used a flex sensor to capture hand motion and control the end effector.</li>
+                          <li>Enabled wireless communication using NRF24L01 transceivers.</li>
+                          <li>Responsible for soldering, hardware assembly, and verifying sensor functionality.</li>
+                        </ul>
+                        <div class="mt-auto pt-4 flex flex-wrap gap-2">
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">Arduino</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">NRF24L01</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Project 3 -->
+                  <div class="project-flipper-container">
+                    <div class="flipper w-full aspect-square">
+                      <div class="card-face card-front w-full h-full cursor-pointer">
+                        <img src="assets/images/Firefighting robot.png" alt="Fire Fighting Robot Project" class="w-full h-full object-cover rounded-lg">
+                      </div>
+                      <div class="card-face card-back w-full h-full bg-zinc-800 p-6 rounded-lg flex flex-col overflow-y-auto">
+                        <button class="back-button" aria-label="Go back to projects"><ion-icon name="arrow-back-outline"></ion-icon></button>
+                        <h4 class="text-xl font-bold text-amber-300">Fire Fighting Robot</h4>
+                        <div class="text-sm text-amber-200 mt-2">
+                          <span><strong>Role:</strong> Hardware & Testing Engineer</span><br>
+                          <span><strong>Duration:</strong> 5 months</span><br>
+                          <span><strong>Team Size:</strong> 3 members</span>
+                        </div>
+                        <p class="text-zinc-400 mt-4">Designed a robot to detect and extinguish small fires in compact areas, using flame/temperature sensors and an automated water-spraying system.</p>
+                        <p class="text-zinc-300 mt-4 font-semibold">Key Responsibilities:</p>
+                        <ul class="list-disc list-inside text-zinc-400 space-y-1 mt-2">
+                          <li>Assembled mechanical and electronic parts, including chassis, water pump, and wiring.</li>
+                          <li>Tested and calibrated flame and temperature sensors for accurate fire detection.</li>
+                          <li>Installed and configured DC motors for mobility and the water pump system.</li>
+                        </ul>
+                        <div class="mt-auto pt-4 flex flex-wrap gap-2">
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">Arduino</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">Sensor Calibration</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+     
+                
+             
+
+          
+              </div>
+
+            </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // This part adds the necessary CSS to the page to show/hide tabs.
+      // This makes the solution self-contained and not reliant on your style.css file.
+      const style = document.createElement('style');
+      style.innerHTML = `
+        .tab-content {
+          display: none;
+        }
+        .tab-content.active {
+          display: block;
+        }
+        /* Styling for the buttons */
+        .tab-button {
+          padding: 0.75rem 1.5rem;
+          border-radius: 0.375rem;
+          font-size: 0.875rem;
+          font-weight: 500;
+          color: #A1A1AA; /* zinc-400 */
+          transition: color 0.2s, background-color 0.2s;
+        }
+        .tab-button:hover {
+          color: #FBBF24; /* amber-400 */
+          background-color: #3F3F46; /* zinc-700 */
+        }
+        .tab-button.active {
+          color: #FBBF24; /* amber-400 */
+        }
+        .tab-button .ion-icon {
+          color: #FBBF24; /* amber-400 */
+        }
+      `;
+      document.head.appendChild(style);
+
+      // This part handles the click events for switching tabs.
+      const tabButtons = document.querySelectorAll('[data-tab-target]');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const target = document.querySelector(button.dataset.tabTarget);
+
+          // Deactivate all content and buttons
+          tabContents.forEach(content => {
+            content.classList.remove('active');
+          });
+          tabButtons.forEach(btn => {
+            btn.classList.remove('active');
+          });
+
+          // Activate the clicked button and its corresponding content
+          button.classList.add('active');
+          target.classList.add('active');
+        });
+      });
+    });
+
+
+     // --- Project Card Flipper Logic ---
+    const cardFronts = document.querySelectorAll('.card-front');
+    const backButtons = document.querySelectorAll('.back-button');
+
+    // Add event listeners to the front of the cards to flip them forward
+    cardFronts.forEach(front => {
+        front.addEventListener('click', () => {
+            const flipper = front.closest('.flipper');
+            const grid = flipper.closest('.grid');
+            flipper.classList.add('is-flipped');
+            grid.classList.add('flipped-parent');
+        });
+    });
+
+    // Add event listeners to the new back buttons to flip them back
+    backButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            event.stopPropagation(); // Prevents the click from bubbling up to other elements
+            const flipper = button.closest('.flipper');
+            const grid = flipper.closest('.grid');
+            flipper.classList.remove('is-flipped');
+            grid.classList.remove('flipped-parent');
+        });
+    });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+/* Card Flipper Styles */
+.flipper {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+.flipper.is-flipped {
+  transform: rotateY(180deg);
+}
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.card-back {
+  transform: rotateY(180deg);
+  position: relative; /* Context for the back button */
+}
+.grid.flipped-parent .project-flipper-container:not(:has(.is-flipped)) {
+  display: none;
+}
+.grid.flipped-parent .project-flipper-container:has(.is-flipped) {
+  grid-column: 1 / -1;
+}
+
+/* Back Button Styles */
+.back-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 20;
+    background-color: rgba(251, 191, 36, 0.8); /* amber-400 with some transparency */
+    color: var(--eerie-black-2);
+    border: none;
+    border-radius: 9999px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+.back-button:hover {
+    background-color: #FBBF24; /* amber-400 */
+    transform: scale(1.1);
+}
+.back-button ion-icon {
+    font-size: 1.5rem;
+    --ionicon-stroke-width: 48px;
+}
