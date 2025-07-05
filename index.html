@@ -414,7 +414,121 @@
                       </div>
                     </div>
                   </div>
-                </div>
+
+              
+                  <!-- Project 5 -->
+                  
+                  <div class="project-flipper-container">
+                  <div class="flipper w-full aspect-square">
+                  <div class="card-face card-front w-full h-full cursor-pointer">
+                  <img src="assets/images/Autonomous_Navigation.png" alt="Autonomous Navigation Project" class="w-full h-full object-cover rounded-lg">
+                  
+                      </div>
+                  
+                      <div class="card-face card-back w-full h-full bg-zinc-800 p-6 rounded-lg flex flex-col overflow-y-auto">
+                      <button class="back-button" aria-label="Go back to projects"><ion-icon name="arrow-back-outline"></ion-icon></button>
+                      <h4 class="text-xl font-bold text-amber-300">Autonomous Navigation Project</h4>
+                      <div class="text-sm text-amber-200 mt-2">
+                      <span><strong>Role:</strong> Mapping, Parameter Tuning & ROS Navigation</span><br>
+                      <span><strong>Duration:</strong> 3 Months</span><br>
+                      <span><strong>Team Size:</strong> 5 members</span>
+                  
+                    </div>
+                  
+                        <p class="text-zinc-400 mt-4">As part of a team project in the Autonomous Mobile Robots course, we worked with a pre-built Yahboom X3 robot, provided by the instructor, to complete a fully autonomous indoor navigation challenge. The goal was to make the robot start from a depot, travel around a central pillar while avoiding obstacles, and return to the starting point all without human intervention.</p>
+                        <p class="text-zinc-400 mt-4">The competition tested each team’s ability to optimize perception, mapping, planning, and control in real-world conditions on a glossy lab floor with obstacles (like boxes). Our robot successfully completed the task in 1 minute 10 seconds, earning 2nd place out of all teams.</p>
+                        <p class="text-zinc-400 mt-4">We ran three timed trials, and progressively improved performance:</p>
+                  
+                        <ul class="list-disc list-inside text-zinc-400 space-y-1 mt-2">
+                          <li>First trial: 1 minute 23 seconds</li>
+                          <li>Second trial: 1 minute 15 seconds</li>
+                          <li>Final trial: 1 minute 10 seconds</li>
+                          <li>Time was reduced by increasing speed on straight sections and slowing down at turns to avoid skidding and collisions.</li>
+                          <li>In addition to the main loop-based navigation, we added a color-based path tracking feature, allowing the robot to follow a specific colored marker to complete a secondary task.</li>
+                          <li>We benchmarked both DWA and TEB local planners to compare path smoothness and obstacle handling.</li>
+                        </ul>
+                  
+                        <p class="text-zinc-300 mt-4 font-semibold">My Main Contributions:</p>
+                  
+                        <ul class="list-disc list-inside text-zinc-400 space-y-1 mt-2">
+                          <li>Created a 2D map of the track using LiDAR and RGB-D input via GMapping, and cleaned the map using map_server.</li>
+                          <li>Tuned velocity and acceleration parameters in move_base using rqt_reconfigure to reduce lap times while ensuring safety.</li>
+                          <li>Launched and managed the robot’s complete ROS1 navigation pipeline, including sensor integration, planner switching, and runtime testing.</li>
+                          <li>Assisted in setting up color-tracking behavior by configuring detection thresholds and linking it to the robot’s movement system.</li>
+                          <li>Helped ensure reliable localization with &lt;5 cm error by optimizing AMCL and velocity PID tuning.</li>
+                        </ul>
+                  
+                        <div class="mt-auto pt-4 flex flex-wrap gap-2">
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">ROS1</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">ROS2</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">Gazebo</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">Jetson NX</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">LiDAR</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">RGB-D Camera</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">Mapping</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">AMCL</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">Navigation</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">Obstacle Avoidance</span>
+                        </div>
+                  
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+                
+
+                  <div class="project-flipper-container">
+                    <div class="flipper w-full aspect-square">
+                      <div class="card-face card-front w-full h-full cursor-pointer">
+                        <img src="assets/images/Warehouse_Autonomous_Robot.png" alt="Warehouse Autonomous Robot Control System" class="w-full h-full object-cover rounded-lg">
+                      </div>
+                  
+                      <div class="card-face card-back w-full h-full bg-zinc-800 p-6 rounded-lg flex flex-col overflow-y-auto">
+                        <button class="back-button" aria-label="Go back to projects"><ion-icon name="arrow-back-outline"></ion-icon></button>
+                        <h4 class="text-xl font-bold text-amber-300">Warehouse Autonomous Robot Control System</h4>
+                        <div class="text-sm text-amber-200 mt-2">
+                          <span><strong>Role:</strong> Robotics Simulation Engineer</span><br>
+                          <span><strong>Duration:</strong> 3 Months</span><br>
+                          <span><strong>Team Size:</strong> 2 members</span>
+                        </div>
+                  
+                        <p class="text-zinc-400 mt-4" style="text-align: justify;">
+                          Designed and validated an entirely simulation-based autonomous robot control system, analyzing path planning algorithms within Gazebo and RViz to optimize navigation in virtual warehouse environments.
+                        </p>
+                  
+                        <p class="text-zinc-300 mt-4 font-semibold">Key Responsibilities & Achievements:</p>
+                  
+                        <ul class="list-disc list-inside text-zinc-400 space-y-1 mt-2">
+                          <li>Analyzed five foundational path planning algorithms (A ∗ , RRT, RRT ∗ , D ∗ Lite, Dijkstra's) to determine the most effective strategies for autonomous navigation in a simulated environment.</li>
+                          <li>Developed and simulated a novel hybrid navigation model combining D ∗ Lite and RRT to improve pathfinding capabilities against dynamic obstacles.</li>
+                          <li>Designed and built a complex, multi-robot warehouse world from scratch in Gazebo to serve as a realistic virtual testbed for all implemented algorithms.</li>
+                          <li>Engineered a simulated vision system by integrating a virtual camera feed into Gazebo to test and validate robot tracking with OpenCV and ArUco markers.</li>
+                          <li>Utilized RViz to visualize navigation paths, virtual sensor data, and map generation during simulations, which significantly improved debugging and performance analysis.</li>
+                          <li>Demonstrated through simulation that a hybrid RRT ∗ and D ∗ Lite system delivered superior performance, enhancing path optimization and adaptability to dynamic obstacles within the simulation.</li>
+                          <li>Authored a comprehensive research paper and presented the project's findings, detailing the comparative analysis and results achieved purely through simulation.</li>
+                        </ul>
+                  
+                        <p class="text-zinc-300 mt-4 font-semibold">Technical Skills:</p>
+                  
+                        <div class="mt-2 flex flex-wrap gap-2">
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">Gazebo & RViz</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">ROS (Robot Operating System)</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">Path Planning Algorithms (A ∗ , D ∗ Lite, RRT, RRT ∗ )</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">OpenCV</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">Autonomous Navigation Theory</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">C++/Python</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">Algorithm Analysis & Simulation</span>
+                          <span class="inline-block bg-zinc-700 text-zinc-300 text-sm font-medium px-2.5 py-0.5 rounded">ArUco Marker Detection</span>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+                  
+          
+                  
+               </div>
               </section>
      
                 
